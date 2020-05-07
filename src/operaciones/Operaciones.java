@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Operaciones {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {// { instancia de la clase
         double x,y;
 
         Scanner teclado = new Scanner(System.in);
@@ -24,7 +24,8 @@ public class Operaciones {
         System.out.println("la potencia es: ");
       potencia(x,y);
 
-    }
+    }//instancia de la clase };
+
 
     // Método para mostrar el resultado
     public static void resultado(double num){
