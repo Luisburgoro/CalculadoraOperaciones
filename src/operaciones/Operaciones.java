@@ -24,8 +24,8 @@ public class Operaciones {
         System.out.println("la potencia es: ");
       potencia(x,y);
 
-    }// };
-     // no esta validada ya que no me corresponde esa parte
+    }//  };
+    // no esta validada ya que no me corresponde esa parte
 
 
     // Método para mostrar el resultado
