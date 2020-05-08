@@ -25,6 +25,7 @@ public class Operaciones {
       potencia(x,y);
 
     }//instancia de la clase };
+     // no esta validada ya que no me corresponde esa parte
 
 
     // Método para mostrar el resultado
@@ -33,21 +34,22 @@ public class Operaciones {
     }
 
     //Metodos de operaciones básicas, utilizarán las variables globales, son del tipo double.
+
     public static void suma(double x, double y){
-        resultado(x+y);
+        resultado(x+y);// se hace la operación suma dentro del metodo resultado
     }
     public static void resta(double x, double y){
-        resultado(x-y);
+        resultado(x-y);// se hace la operación resta dentro del método resultado
     }
     public static void multiplicacion(double x, double y){
-        resultado(x*y);
+        resultado(x*y);// se hace la operación multiplicación dentro del método resultado
     }
     public static void division(double x, double y){
         if(y==0){
             System.out.println("Error: No se puede dividir por 0"); // Caso indeterminado
         }
         else{
-            resultado(x/y);
+            resultado(x/y);//se realiza la operación división dentro del método resultado
         }
     }
     public static void mayor(double x, double y) {
@@ -55,14 +57,14 @@ public class Operaciones {
             System.out.println("El número mayor es " + x);
         } else {
             System.out.println("El número mayor es " + y);
-        }
+        }// se define con operadores lógicos cual es mayor
     }
     public static void potencia(double x, double y){
         if(x==0 && y==0){
             System.out.println("Error: 0 elevado a 0 está indeterminado"); // Caso indeterminado
         }
         else {
-            resultado(Math.pow(x, y));
+            resultado(Math.pow(x, y));//se realiza la operación potencia dentro del método resultado con la funcion Math.pow de la clase Math.
         }
     }
 }
