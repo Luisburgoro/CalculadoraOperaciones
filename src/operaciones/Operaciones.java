@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Operaciones {
 
-    public static void main(String[] args) {// { instancia de la clase
+    public static void main(String[] args) {// { llamada a los metodos para que esta parte del programa funcione
         double x,y;
 
         Scanner teclado = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class Operaciones {
         System.out.println("la potencia es: ");
       potencia(x,y);
 
-    }//instancia de la clase };
+    }// };
      // no esta validada ya que no me corresponde esa parte
 
 
@@ -35,16 +35,19 @@ public class Operaciones {
 
     //Metodos de operaciones básicas, utilizarán las variables globales, son del tipo double.
 
-    public static void suma(double x, double y){
+    public static void suma(double x, double y){//metodo que suma
         resultado(x+y);// se hace la operación suma dentro del metodo resultado
     }
-    public static void resta(double x, double y){
+
+    public static void resta(double x, double y){//metodo que resta
         resultado(x-y);// se hace la operación resta dentro del método resultado
     }
-    public static void multiplicacion(double x, double y){
+
+    public static void multiplicacion(double x, double y){//metodo que multiplica
         resultado(x*y);// se hace la operación multiplicación dentro del método resultado
     }
-    public static void division(double x, double y){
+
+    public static void division(double x, double y){//metodo que divide
         if(y==0){
             System.out.println("Error: No se puede dividir por 0"); // Caso indeterminado
         }
@@ -52,14 +55,16 @@ public class Operaciones {
             resultado(x/y);//se realiza la operación división dentro del método resultado
         }
     }
-    public static void mayor(double x, double y) {
+
+    public static void mayor(double x, double y) {//metodo que ve cual es el numero mayor
         if (x >= y) {
             System.out.println("El número mayor es " + x);
         } else {
             System.out.println("El número mayor es " + y);
         }// se define con operadores lógicos cual es mayor
     }
-    public static void potencia(double x, double y){
+
+    public static void potencia(double x, double y){//metodo que eleva el primer número al segundo
         if(x==0 && y==0){
             System.out.println("Error: 0 elevado a 0 está indeterminado"); // Caso indeterminado
         }
